@@ -1,5 +1,4 @@
-
-    <form action="index.php" method= "POST">
+<form action="index.php" method= "POST">
         <div>
             <input type="number" name="dice" id="dice"
             placeholder="Number of dice">
