@@ -12,13 +12,17 @@
 <header class="header">
     <h1 class="header-title">Dices</h1>
 </header>
+<nav class="nav">
+    <a href="./index.php" class="link">Dices</a>
+    <a href="./form.php" class="link">Form</a>
+</nav>
 <section class="form-section">
-    <form action="index.php" method= "POST" class="form">
-    <div class="diceNumber">
+    <form action="./index.php" class="dice-form" method= "POST" >
+    <div class="cell">
         <input type="number" name="dice" class="dice"
         placeholder="Number of dice">
         </div>
-        <div class="diceFaces">
+        <div class="cell">
             <select name="face" class="face">
 	        <option value="">--- Number of face ---</option>
 	        <option value="6">6</option>
@@ -35,14 +39,14 @@
     // déclaration des variables
     $number = $_POST["dice"];
     $faceNumber = $_POST["face"];
-    $diceValue = 0 + $diceValues;
+    $diceValue = 0;
 
     // Print des dés lancés
-    echo "Dice rolled: $number <br>";
+    echo "Dice(s) rolled: $number <br>";
     // Print du nombre de faces 
-    echo "Number of faces: $faceNumber <br>";
+    echo "Number(s) of face(s): $faceNumber <br>";
     // Print du total de la valeur des dés
-    echo "Total: $diceValue <br> <br>";
+    echo "Total value: <br> <br> ";
 
     // Boucle du lancé de dé 
     for ($dice = 1; $dice <= $number; $dice++) {
