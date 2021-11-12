@@ -17,7 +17,7 @@
     <a href="./form.php" class="link">Form</a>
 </nav>
 <section class="form-section">
-    <form action="./form.php" class="form" method="POST">
+    <form action="form.php" class="form" method="POST">
         <div class="cell">
                 <label for="name" >
                 Nom
@@ -48,12 +48,12 @@
             <textarea  name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
         </div>
         <div class="button">
-            <input type="submit" formaction="./resultats.php" value="Envoyer">
+            <input type="submit" name="submit" formaction="resultats.php" value="Envoyer">
         </div>
     </form>
-</section>
 <?php
-include './resultats.php';
+include 'resultats.php';
 ?>
+</section>
 </body>
 </html>
