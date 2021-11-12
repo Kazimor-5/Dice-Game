@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulaire</title>
     <link rel="stylesheet" href="./styles.css">
+    
 </head>
 <body>
    <header class="header">
@@ -21,22 +22,22 @@
                 <label for="name" >
                 Nom
                 </label>
-                <input type="text" name="name" id="name">
+                <input type="text"  name="name" id="name">
             </div>
         <div class="cell">
                 <label for="first-name" >
                 Prénom
                 </label>
-                <input type="text" name="first-name" id="first-name">
+                <input type="text"  name="firstName" id="first-name">
             </div>
         <div class="cell">
                 <label for="mail" >
                 E-mail
                 </label>
-                <input type="email" required name="mail" id="mail">
+                <input type="email"  name="mail" id="mail">
             </div>
         <div class="cell">
-            <select name="motif" class="motif">
+            <select  name="motif" class="motif">
 	        <option value="">--- Catégorie ---</option>
 	        <option value="plainte">Plainte</option>
 	        <option value="request">Requête</option>
@@ -44,12 +45,15 @@
             </select>
         </div>
         <div class="cell">
-            <textarea name="message" id="message" cols="30" rows="10" placeholder="Entrer votre message"></textarea>
+            <textarea  name="message" id="message" cols="30" rows="10" placeholder="Entrer votre message"></textarea>
         </div>
         <div class="button">
-            <button type="submit">Envoyer</button>
+            <input type="submit" value="Envoyer" target="./resultats.php">
         </div>
     </form>
 </section>
+<?php
+include './resultats.php';
+?>
 </body>
 </html>

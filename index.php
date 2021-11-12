@@ -39,23 +39,24 @@
     // déclaration des variables
     $number = $_POST["dice"];
     $faceNumber = $_POST["face"];
-    $diceValue = 0;
+
+    // Boucle du lancé de dé 
+    for ($dice = 1; $dice <= $number; $dice++) {
+        // valeur random
+        $diceValues = rand(1, $faceNumber);
+        // Total cumulé
+        $total +=$diceValues;
+        // Print des valeurs de dés
+        echo $diceValues;
+        echo "<br>";
+    }
 
     // Print des dés lancés
     echo "Dice(s) rolled: $number <br>";
     // Print du nombre de faces 
     echo "Number(s) of face(s): $faceNumber <br>";
     // Print du total de la valeur des dés
-    echo "Total value: <br> <br> ";
-
-    // Boucle du lancé de dé 
-    for ($dice = 1; $dice <= $number; $dice++) {
-        // valeur random
-        $diceValues = rand(1, $faceNumber);
-        // Print des valeurs de dés
-        echo $diceValues;
-        echo "<br>";
-    }
+    echo "Total value: $total<br> <br> ";
 
 ?>
 </section>
