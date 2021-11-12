@@ -6,31 +6,41 @@
     $commentaire = $_POST[("commentaire")];
 
     if ($name = true) {
-        echo "$name <br>";
+        return  $name;
+        print_r($name);
+        echo "br";
     } else {
         echo "Veuillez remplir le formulaire";
     }
 
     if ($firstName = true) {
-        echo "$firstName <br>";
+        return  $firstName;
+        print_r($firstName);
+        echo "br";
     } else {
         echo "Veuillez remplir le formulaire";
     }
     
     if ($mail = true) {
-        echo "$mail <br>";
+        return  $mail;
+        print_r($mail);
+        echo "br";
     } else {
         echo "Veuillez remplir le formulaire";
     }
 
     if ($motif = true) {
-        echo "$motif <br>";
+        return  $motif;
+        print_r($motif);
+        echo "br";
     } else {
         echo "Veuillez remplir le formulaire";
     }
 
     if ($commentaire = true) {
-        echo "$commentaire <br>";
+        return  $commentaire;
+        print_r($commentaire);
+        echo "br";
     } else {
         echo "Veuillez remplir le formulaire";
     }

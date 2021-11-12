@@ -45,10 +45,10 @@
             </select>
         </div>
         <div class="cell">
-            <textarea  name="message" id="message" cols="30" rows="10" placeholder="Entrer votre message"></textarea>
+            <textarea  name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
         </div>
         <div class="button">
-            <input type="submit" value="Envoyer" target="./resultats.php">
+            <input type="submit" value="Envoyer" target="resultats.php">
         </div>
     </form>
 </section>
