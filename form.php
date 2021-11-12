@@ -48,7 +48,7 @@
             <textarea  name="message" id="message" cols="30" rows="10" placeholder="Entrez votre message"></textarea>
         </div>
         <div class="button">
-            <input type="submit" value="Envoyer" target="resultats.php">
+            <input type="submit" formaction="./resultats.php" value="Envoyer">
         </div>
     </form>
 </section>
