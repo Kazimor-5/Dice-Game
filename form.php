@@ -40,7 +40,7 @@
             <select  name="motif" class="motif">
 	        <option value="">--- Catégorie ---</option>
 	        <option value="plainte">Plainte</option>
-	        <option value="request">Requête</option>
+	        <option value="requete">Requête</option>
 	        <option value="commentaire">Commentaire</option>
             </select>
         </div>
